@@ -89,6 +89,7 @@ body {
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 100px;
 }
 
 .left-column {
@@ -123,6 +124,31 @@ html {
     letter-spacing: -1px;
     margin-top: -5px;
     max-width: 200px;
+}
+
+.left-column .section-spy {
+  margin-top: 40px;     
+}
+
+.left-column .section-spy ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.left-column .section-spy a {
+  display: block;
+  padding: 6px 0;
+  color: rgba(255,255,255,0.6);
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  transition: color .2s;
+}
+
+.left-column .section-spy a.active {
+  color: #0ff;
+  font-weight: 600;
 }
 
 .right-column {

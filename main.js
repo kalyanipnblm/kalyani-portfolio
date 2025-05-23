@@ -65,3 +65,35 @@ function animate() {
 }
 
 animate();
+
+document.addEventListener('DOMContentLoaded', function() {
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.section-spy a');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const id = entry.target.getAttribute('id');
+      const link = document.querySelector(`.section-spy a[href="#${id}"]`);
+      
+      if (entry.isIntersecting) {
+        navLinks.forEach(a => a.classList.remove('active'));
+        link.classList.add('active');
+      }
+    });
+  }, {
+    root: null,
+    rootMargin: '0px 0px -50% 0px',
+    threshold: 0.1
+  });
+
+  sections.forEach(section => observer.observe(section));
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const targetId = link.getAttribute('href');
+      const targetSection = document.querySelector(targetId);
+      targetSection.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+});
