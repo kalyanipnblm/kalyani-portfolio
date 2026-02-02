@@ -560,3 +560,113 @@ html {
   font-size: 13px;
   font-weight: 500;
 }
+@media (max-width: 900px) {
+  .content {
+    flex-direction: column;
+    padding: 60px 40px;
+    gap: 40px;
+  }
+
+  .left-column {
+    position: relative;
+    top: 0;
+    max-width: 100%;
+  }
+
+  .right-column {
+    max-width: 100%;
+  }
+
+  .name {
+    font-size: 36px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
+
+  .description {
+    max-width: 100%;
+  }
+
+  .section-spy {
+    display: none;
+  }
+
+  .project-link {
+    flex-direction: column;
+  }
+
+  .project-thumb {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .content {
+    padding: 40px 20px;
+    gap: 30px;
+  }
+
+  .name {
+    font-size: 28px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+
+  .right-column {
+    font-size: 15px;
+  }
+
+  .experience-item {
+    padding: 16px;
+  }
+
+  .experience-title {
+    font-size: 18px;
+  }
+
+  .project-title {
+    font-size: 18px;
+  }
+
+  .project-thumb {
+    max-width: 100%;
+  }
+
+  .skill {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  .social-links {
+    margin-top: 30px;
+  }
+
+  /* Lightbox adjustments for mobile */
+  .lightbox-prev,
+  .lightbox-next {
+    font-size: 30px;
+    padding: 10px;
+  }
+
+  .lightbox-prev {
+    left: 10px;
+  }
+
+  .lightbox-next {
+    right: 10px;
+  }
+
+  .lightbox-caption {
+    bottom: 80px;
+    font-size: 12px;
+  }
+}
