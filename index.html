@@ -55,9 +55,10 @@
     <div class="right-column">
       <section id="about">
         <div class="about-me-group">
-          <div class="about-me-description">Final-year Computer Science student at Newcastle University (<span class="highlight">First Class Honours</span>), incoming <span class="highlight">MSc in Artificial Intelligence</span> at the University of Bristol.</div>
-          <div class="about-me-2nd-paragraph">I'm passionate about <span class="highlight">Machine Learning</span>, <span class="highlight">AI systems</span>, and creating intuitive user experiences through code — specializing in the intersection of <span class="highlight">scalable data infrastructure</span> and <span class="highlight">secure AI-native systems</span>. During my internship as a System Architect at <a href="https://personadynamics.ai/" target="_blank" rel="noopener" class="inline-link">Persona Design</a>, I integrated LLMs via Azure OpenAI into a full-stack platform (Angular, FastAPI). My supervisor described my work as showing <span class="highlight">"mature understanding of system architecture."</span></div>
-          <div class="about-me-3rd-paragraph">My current research focuses on <span class="highlight">Affective Computing</span> and <span class="highlight">LLM-driven data storytelling</span>, exploring how emotional context can shape AI-generated narratives and visualisations. Whether I'm building <span class="highlight">Explainable AI</span> pipelines with SHAP or designing interactive interfaces with <span class="highlight">D3.js</span>, my goal is the same: to make AI systems that people can understand and trust.</div>
+          <div class="about-me-description">I am a Computer Science student at Newcastle University, currently preparing for an <span class="highlight">MSc in Artificial Intelligence</span> at the University of Bristol.</div>
+          <div class="about-me-2nd-paragraph">My work exists at the <span class="highlight">intersection of System Architecture and User Experience</span>. I don't just want to build AI, I want to <span class="highlight">make AI intuitive and accessible</span>. During my recent internship as a System Architect at <a href="https://personadynamics.ai/" target="_blank" rel="noopener" class="inline-link">Persona Design</a>, I learned how to bridge the gap between complex backend logic (FastAPI, Azure OpenAI) and seamless frontend interactions (Angular). My supervisor described my work as showing <span class="highlight">"mature understanding of system architecture."</span></div>
+          <div class="about-me-recent-work">Recent work includes transfer learning for medical imaging (86.2% accuracy), custom CNN architectures for computer vision (72.46%), and LLM-driven affective computing for data storytelling.</div>
+          <div class="about-me-3rd-paragraph">I am passionate about <span class="highlight">Explainable AI (XAI)</span>, using tools like SHAP to design transparent systems that users can trust. Whether I'm prototyping in <span class="highlight">Figma</span> or training models in <span class="highlight">PyTorch</span>, my goal is the same: to create products where <span class="highlight">technical depth meets creative storytelling</span>.</div>
         </div>
       </section>
 
@@ -75,11 +76,10 @@
           <div class="experience-description">
             <p>Developed features for an <span class="highlight">AI-powered marketing platform</span> using Angular (Frontend) and FastAPI/Python (Backend), working across the full technology stack.</p>
             <ul class="experience-highlights">
-              <li><span class="highlight">Full-Stack AI Integration:</span> Built user-facing features including file download with permission-based access controls, chat thread management, and persona segmentation workflows. Engineered tenant-scoped query isolation using PostgreSQL Row-Level Security (RLS) to prevent cross-tenant data leakage.</li>
+              <li><span class="highlight">Full-Stack AI Integration:</span> Built user-facing features including file download with permission-based access controls, chat thread management, and persona segmentation workflows.</li>
               <li><span class="highlight">Database Architecture:</span> Designed and migrated JSONB schemas for a dynamic persona-type system, enabling schema-driven AI content generation via Azure OpenAI.</li>
               <li><span class="highlight">Security & Scalability:</span> Implemented Role-Based Access Control (RBAC) and secure RESTful APIs with complex cascade operations.</li>
               <li><span class="highlight">UI/UX Implementation:</span> Created intuitive user workflows including confirmation dialogs, real-time UI updates, and conditional rendering based on permissions.</li>
-              <li><span class="highlight">Observability:</span> Instrumented FastAPI services with structured logging and error tracing to ensure end-to-end data flow observability.</li>
             </ul>
           </div>
           <div class="experience-feedback">
@@ -135,6 +135,71 @@
 
           <li class="project-item">
             <a
+              href="https://github.com/kalyanipnblm/biomedical-ai"
+              class="project-link"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="assets/biomedical-ai-confusion.png"
+                alt="VGG16 Medical Imaging - Confusion Matrix"
+                class="project-thumb"
+                data-lightbox="true"
+                data-gallery='["assets/biomedical-ai-confusion.png", "assets/biomedical-ai-shap.png"]'
+                data-captions='["Confusion Matrix: 86.2% accuracy on retinal OCT classification", "SHAP visualizations: Model attention on retinal structures"]'
+              />
+              <div class="project-content">
+                <h3 class="project-title">VGG16 Medical Image Classification - Retinal OCT</h3>
+                <p class="project-desc">
+                  Transfer learning with VGG16 for automated diagnosis of retinal eye disorders (CNV, DME, DRUSEN, NORMAL).
+                  Achieved 86.2% accuracy and F1-score of 0.862 on 968 test images. Integrated SHAP explainability for
+                  clinical interpretability—went beyond coursework requirements to ensure model predictions could be
+                  trusted by healthcare professionals. Demonstrated that explainability is critical for high-stakes ML applications.
+                </p>
+                <div class="project-tags">
+                  <span class="project-tag">PyTorch</span>
+                  <span class="project-tag">VGG16</span>
+                  <span class="project-tag">Transfer Learning</span>
+                  <span class="project-tag">SHAP (XAI)</span>
+                  <span class="project-tag">Medical Imaging</span>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="project-item">
+            <a
+              href="https://github.com/kalyanipnblm/cifar10-custom-cnn"
+              class="project-link"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="assets/compvision-image.png"
+                alt="CIFAR-10 Custom CNN - Computer Vision"
+                class="project-thumb"
+                data-lightbox="true"
+              />
+              <div class="project-content">
+                <h3 class="project-title">CIFAR-10 Custom CNN - Computer Vision</h3>
+                <p class="project-desc">
+                  Custom convolutional neural network built from scratch for image classification on CIFAR-10 dataset.
+                  Achieved 72.46% test accuracy with progressive filter architecture (32→64→128 filters).
+                  Implemented regularization comparison (L2 weight decay, Dropout p=0.5, Batch Normalization) and
+                  feature visualization to understand hierarchical learning from edges to textures to abstract features.
+                </p>
+                <div class="project-tags">
+                  <span class="project-tag">PyTorch</span>
+                  <span class="project-tag">Custom CNN</span>
+                  <span class="project-tag">Feature Visualization</span>
+                  <span class="project-tag">Regularization</span>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="project-item">
+            <a
               href="https://github.com/kal888/habitude"
               class="project-link"
               target="_blank"
@@ -154,51 +219,13 @@
                   A habit-tracking app built with a design-first approach. Created high-fidelity Figma mockups before coding,
                   then implemented a three-tier architecture (React, Node.js, PostgreSQL) with full DevOps pipeline:
                   Docker containerisation, GitHub Actions CI/CD, and Azure cloud deployment.
-                  Provisioned Azure resources (PostgreSQL, ACR, ACI) using ARM Templates and conducted a comparative analysis
-                  with Terraform regarding state management and CI/CD integration.
-                  Achieved zero-downtime deployments via a multi-stage GitHub Actions pipeline.
                 </p>
                 <div class="project-tags">
                   <span class="project-tag">Figma</span>
                   <span class="project-tag">React</span>
                   <span class="project-tag">Node.js</span>
                   <span class="project-tag">Docker</span>
-                  <span class="project-tag">ARM Templates</span>
-                  <span class="project-tag">GitHub Actions</span>
                   <span class="project-tag">Azure</span>
-                </div>
-              </div>
-            </a>
-          </li>
-
-          <li class="project-item">
-            <a
-              href="https://github.com/kalyanipnblm/biomedical-ai"
-              class="project-link"
-              target="_blank"
-              rel="noopener"
-            >
-              <img
-                src="assets/biomedical-ai-confusion.png"
-                alt="Biomedical AI - Confusion Matrix"
-                class="project-thumb"
-                data-lightbox="true"
-                data-gallery='["assets/biomedical-ai-confusion.png", "assets/biomedical-ai-shap.png"]'
-                data-captions='["Confusion Matrix: 86.2% accuracy on retinal OCT classification", "SHAP visualizations: Model attention on retinal structures"]'
-              />
-              <div class="project-content">
-                <h3 class="project-title">Biomedical AI & Data Analytics</h3>
-                <p class="project-desc">
-                  Medical imaging classification achieving 86.2% accuracy using Transfer Learning (VGG16) on retinal OCT scans.
-                  Integrated Explainable AI (SHAP) to visualise which retinal regions influence predictions,
-                  making the model's decisions transparent for clinical use. Provided auditable feature attributions,
-                  ensuring transparency in automated clinical decision-making.
-                </p>
-                <div class="project-tags">
-                  <span class="project-tag">PyTorch</span>
-                  <span class="project-tag">Transfer Learning</span>
-                  <span class="project-tag">SHAP (XAI)</span>
-                  <span class="project-tag">Medical Imaging</span>
                 </div>
               </div>
             </a>
@@ -272,30 +299,31 @@
         <h2>Skills</h2>
 
         <div class="skill-category">
-          <h3 class="skill-category-title">Machine Learning & AI</h3>
+          <h3 class="skill-category-title">AI & Data Science</h3>
           <div class="tech-skills">
             <span class="skill">PyTorch</span>
             <span class="skill">Transfer Learning</span>
-            <span class="skill">LLMs</span>
-            <span class="skill">Prompt Engineering</span>
-            <span class="skill">Affective Computing</span>
             <span class="skill">Explainable AI (SHAP)</span>
+            <span class="skill">LLMs</span>
+            <span class="skill">Custom CNN Architecture</span>
+            <span class="skill">Feature Visualization</span>
+            <span class="skill">Prompt Engineering</span>
             <span class="skill">Scikit-learn</span>
             <span class="skill">NLP</span>
+            <span class="skill">Affective Computing</span>
           </div>
         </div>
 
         <div class="skill-category">
-          <h3 class="skill-category-title">Data Science</h3>
+          <h3 class="skill-category-title">Design</h3>
           <div class="tech-skills">
-            <span class="skill">Pandas</span>
-            <span class="skill">NumPy</span>
-            <span class="skill">D3.js</span>
-            <span class="skill">Seaborn/Matplotlib</span>
+            <span class="skill">Figma</span>
+            <span class="skill">User Flow Mapping</span>
+            <span class="skill">Wireframing</span>
           </div>
         </div>
 
-        <div class="skill-category">
+1        <div class="skill-category">
           <h3 class="skill-category-title">Software Development</h3>
           <div class="tech-skills">
             <span class="skill">Python</span>
@@ -307,23 +335,19 @@
             <span class="skill">React</span>
             <span class="skill">Node.js</span>
             <span class="skill">Java</span>
-            <span class="skill">Go (Learning)</span>
             <span class="skill">SQL</span>
             <span class="skill">PostgreSQL</span>
           </div>
         </div>
 
         <div class="skill-category">
-          <h3 class="skill-category-title">Cloud & DevOps</h3>
+          <h3 class="skill-category-title">Tools & DevOps</h3>
           <div class="tech-skills">
-            <span class="skill">Infrastructure as Code (ARM, Terraform)</span>
             <span class="skill">Docker</span>
-            <span class="skill">GitHub Actions CI/CD</span>
             <span class="skill">Microsoft Azure</span>
             <span class="skill">Git/GitHub</span>
             <span class="skill">CI/CD Pipelines</span>
             <span class="skill">RESTful APIs</span>
-            <span class="skill">Figma</span>
           </div>
         </div>
       </section>
