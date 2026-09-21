@@ -337,6 +337,10 @@ html {
   border-left: 3px solid rgba(0, 255, 255, 0.4);
 }
 
+.experience-item + .experience-item {
+  margin-top: 24px;
+}
+
 .experience-header {
   display: flex;
   flex-direction: column;
